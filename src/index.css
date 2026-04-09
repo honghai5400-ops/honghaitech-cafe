@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@theme {
+  --color-brand-primary: #2385A3;
+  --color-brand-secondary: #0D3E4F;
+  --color-brand-accent: #D88453;
+  --color-brand-bg: #FBF7EF;
+  --color-brand-text: #1E1E1E;
+  --color-brand-white: #FFFFFF;
+  
+  --font-brand: 'Oswald', sans-serif;
+  --font-body: 'Josefin Sans', sans-serif;
+
+  --animate-float: float 3s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
+:root {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  font-family: var(--font-body);
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+    background-color: var(--color-brand-bg);
+    font-family: var(--font-body);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply uppercase tracking-tight;
+    font-family: var(--font-brand);
+    color: var(--color-brand-secondary);
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply bg-brand-primary text-white px-6 py-2 rounded-full transition-all duration-300 hover:bg-brand-secondary;
+  }
+
+  .btn-accent {
+    @apply bg-brand-accent text-white px-6 py-2 rounded-full transition-all duration-300 hover:opacity-90;
+  }
+}
