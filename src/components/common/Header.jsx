@@ -57,7 +57,7 @@ const Header = () => {
           {/* Logo */}
           <a href="/" className="relative w-40 h-10 md:w-48 md:h-12">
             <img 
-              src="/src/assets/favicon.svg" 
+              src="/favicon.svg" 
               alt="HongHaiTech Cafe" 
               className={`object-contain h-full transition-all duration-300 brightness-100 '}`}
             />
@@ -103,7 +103,7 @@ const Header = () => {
             className="fixed inset-0 bg-white z-[60] flex flex-col p-8"
           >
             <div className="flex justify-between items-center mb-12">
-              <img src="/src/assets/favicon.svg" alt="HongHaiTech Cafe" className="w-40" />
+              <img src="/favicon.svg" alt="HongHaiTech Cafe" className="w-40" />
               <button onClick={() => setIsMobileMenuOpen(false)}><X size={32} className="text-brand-secondary" /></button>
             </div>
             <div className="flex flex-col space-y-6 overflow-y-auto">

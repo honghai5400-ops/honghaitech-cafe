@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand & Socials */}
           <div className="space-y-6">
             <img 
-              src="/src/assets/favicon.svg" 
+              src="/favicon.svg" 
               alt="HongHaiTech Cafe" 
               className="w-48 h-12 object-contain brightness-" 
             />
